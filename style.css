@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFkB0PEHKlVJSUrYjuu0S0E9wQkB1tDW2N5kdrkrScrRW3LHLz4zokNIQAo8egjTIn0lg&usqp=CAU");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+
+.bannerBgImage {
+    height: 100vh;
+    background: url("https://cutewallpaper.org/21/animated-pixel-art-background/ArtStation-Pixel-Art-Environments-James-Doyle.gif");
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+
+}
+
+.bannertext {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#Certificates {
+    padding: 50px;
+    padding-left: 90px;
+}
+
+.certificate-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.certify {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: #e81014;
+}
+
+.certify img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.certify i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(25, 109, 158, 0.6), #ee1056);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.certify:hover img {
+    transform: scale(1.1);
+}
+
+.certify:hover .layer {
+    height: 80%;
+}
+
+.bannerTitle {
+    font-size: 4rem;
+}
+
+.bannerDesc {
+    font-size: 2rem;
+}
+
+.card {
+    cursor: pointer;
+
+}
+
+.card:hover {
+    background-color: orangered;
+    border: 3px solid black;
+}
+
+.bIcon {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.img-fluid:hover {
+    border: 3px solid black;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    width: 100vw;
+    padding: 13px;
+}
